@@ -1,0 +1,14 @@
+div.jumbotron {
+	background-color: transparent;
+}
+
+div.container.footer {
+	background-color: #f5f5f5;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+img.logo {
+	height: 150%;
+}
