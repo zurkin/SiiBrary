@@ -1,3 +1,13 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
 div.jumbotron {
 	background-color: transparent;
 }
@@ -7,8 +17,17 @@ div.container.footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	padding-top: 10px;
+}
+
+div.container.footer p {
+	margin-left: 10px;
 }
 
 img.logo {
 	height: 150%;
+}
+
+div.main-panel-group {
+	margin-top: 50px;
 }
