@@ -9,6 +9,13 @@
  */
 angular.module('siibraryApp')
   .controller('MainCtrl', function ($scope, bookService) {
+	
+	$scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+
 
     $scope.books = bookService.books;
 

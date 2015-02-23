@@ -11,7 +11,7 @@ angular.module('siibraryApp')
   .controller('AddCtrl', function ($scope, bookService) {
     
 
-  	$scope.newBook = {id: "", title: "", description: ""};
+  	$scope.newBook = {id: '', title: '', description: ''};
   	$scope.addBook = function() {
   		bookService.addBook($scope.newBook);
   	};
