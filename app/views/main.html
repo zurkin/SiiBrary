@@ -1,13 +1,14 @@
 <div class="panel-group main-panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
+
+  <div class="panel panel-default" ng-repeat="book in books">
+    <div class="panel-heading" role="tab" id="headingId_{{ book.id }}">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onclick="return false;">
-          Książka 1
+        <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#bookId_{{ book.id }}" aria-expanded="false" aria-controls="bookId_{{ book.id }}" onclick="return false;">
+          {{ book.title }}
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div id="bookId_{{ book.id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingId_{{ book.id }}">
       <div class="panel-body">
 		<div class="media">
 		  <div class="media-left media-top">
@@ -16,8 +17,8 @@
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading">Książka 1</h4>
-		            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		    <h4 class="media-heading">{{ book.title }}</h4>
+		            {{ book.description }}
 		    	<hr>
 		    	<ul class="list-group">
 		    		<li class="">
@@ -39,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
+<!--   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="return false;">
@@ -78,8 +79,8 @@
 		</div>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
+  </div> -->
+<!--   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="return false;">
@@ -118,5 +119,5 @@
 		</div>
       </div>
     </div>    
-  </div>
+  </div> -->
 </div>

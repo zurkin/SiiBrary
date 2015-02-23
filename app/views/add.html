@@ -1,0 +1,17 @@
+<div class="main-panel-group">
+	<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">ID</label>
+	    <input ng-model="newBook.id" type="text" class="form-control" id="title" placeholder="ID">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Tytuł</label>
+	    <input ng-model="newBook.title" type="text" class="form-control" id="title" placeholder="Tytuł">
+	  </div>
+	  <div class="form-group">
+	  	<label for="exampleInputEmail1">Opis</label>
+		<textarea ng-model="newBook.description" class="form-control" rows="3"></textarea>
+	  </div>
+	  <button type="button" class="btn btn-primary btn-right" ng-click="addBook()" >Dodaj</button>
+	</form>
+</div>

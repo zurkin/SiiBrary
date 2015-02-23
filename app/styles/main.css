@@ -31,3 +31,7 @@ img.logo {
 div.main-panel-group {
 	margin-top: 50px;
 }
+
+button.btn-right {
+	float: right;
+}
