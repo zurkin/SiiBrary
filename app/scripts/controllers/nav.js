@@ -9,6 +9,7 @@
  */
 angular.module('siibraryApp')
   .controller('NavCtrl', function ($scope, $location) {
+    
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

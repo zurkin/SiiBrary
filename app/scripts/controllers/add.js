@@ -9,7 +9,12 @@
  */
 angular.module('siibraryApp')
   .controller('AddCtrl', function ($scope, bookService) {
-    
+
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];    
 
   	$scope.newBook = {id: '', title: '', description: ''};
   	$scope.addBook = function() {

@@ -10,6 +10,7 @@
  */
 angular
   .module('siibraryApp', [
+    'angular-loading-bar',
     'ngAnimate',
     'ngCookies',
     'ngResource',

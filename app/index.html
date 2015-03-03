@@ -10,6 +10,7 @@
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -18,7 +19,14 @@
 </head>
 <body ng-app="siibraryApp">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="splash" ng-cloak>
+    <h2>
+      Ładowanie...
+    </h2>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed-top" ng-cloak>
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" class="logo">
@@ -53,14 +61,14 @@
  </nav>
 
  <!-- Main jumbotron for a primary marketing message or call to action -->
- <div class="jumbotron">
+ <div class="jumbotron" ng-cloak>
   <div class="container">
     <div ng-view=""></div>
   </div>
  </div>
 
 
-<div class="container footer">
+<div class="container footer" ng-cloak>
   <!-- Example row of columns -->
   <div class="row">
       <!-- <h2>Heading</h2> -->
@@ -94,6 +102,7 @@ ga('send', 'pageview');
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

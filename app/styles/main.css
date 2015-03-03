@@ -1,3 +1,29 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none;
+}
+
+.splash {
+    display: none;
+}
+
+[ng-cloak].splash {
+    display: block !important;
+}
+
+.splash h2 {
+	text-align: center;
+}
+
+.preloader-spinner {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-width: 3px;
+    background: url('../images/preloader.svg') no-repeat 50% 50% transparent;
+}
+
+/*======================================*/
+
 html {
   position: relative;
   min-height: 100%;
