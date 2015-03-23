@@ -8,7 +8,7 @@
  * Controller of the siibraryApp
  */
 angular.module('siibraryApp')
-  .controller('AddCtrl', function ($scope, bookService) {
+  .controller('AddCtrl', function ($scope, httpFactory) {
 
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -16,9 +16,13 @@ angular.module('siibraryApp')
       'Karma'
     ];    
 
-  	$scope.newBook = {id: '', title: '', description: ''};
+  	$scope.newBook = {id: null, title: '', author: '', description: ''};
   	$scope.addBook = function() {
-  		bookService.addBook($scope.newBook);
+  		httpFactory.createBook({data: $scope.newBook});
+/*  		httpFactory.createBook({
+  			title: $scope.newBook.title, 
+  			author: $scope.newBook.author, 
+  			description: $scope.newBook.description});*/
   	};
 
   });
